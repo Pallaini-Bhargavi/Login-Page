@@ -1,0 +1,92 @@
+<!-DOCTYPE html>
+<html>
+    <head>
+        <title>web page</title>
+<style>      body {
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                height:100%;
+                padding:0;
+                width:100%;
+                margin:0;
+                background-color:lightgrey;
+       }
+        form{
+            width:400px;
+            border-radius:8px;
+            box-shadow:0 0 3px;
+            padding:20px;
+            background-color:white;
+            rgba(0, 0, 0, 0.1);
+       }
+      fieldset {
+                border:1px solid black;
+                padding:20px;
+                margin:0;
+            }
+      legend{
+           font-weight:bold;
+           margin-bottom:10px;
+           text-align:center;
+         }
+     label {
+                display: block;
+                margin-bottom: 5px;
+           }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border:1px solid;
+    border-radius:2px;
+            }
+    input[type="radio"] {
+         margin-left: 20px;
+            }
+    input[type="select"]{
+             padding:10px;
+            }
+    input[type="submit"] {
+               padding: 10px 20px;
+               border:2px;
+               border-radius: 20px;
+               cursor: pointer;
+            }
+</style>
+   </head>
+        <body>
+           <form>
+                 <fieldset>
+             <legend>LOGIN FORM</legend>
+             <label>Enter Username:</label>
+                  <input type="text" name="name"/>
+             <label>Enter Password:</label>
+                   <input type="Password" name="pass"/> 
+             <label>Enter email:</label>
+                   <input type="email" name="email"/>
+             <label>Select your Year:<select>
+                   <option value="ov"/>I
+                   <option value="ov"/>II                                                    
+                   <option value="ov"/>III
+                   <option value="ov"/>IV</select><br>
+              </label>
+             <label>Enter Date of Birth</label>
+                   <input type="Date" name="dob"/>
+             <label>Enter your Gender:<br>
+                   <input type="radio" name="gender" />Male
+                   <input type="radio" name="gender" /> Female                             
+                   <input type="radio" name="gender" />Others</label>
+             <label>Enter your College:</label>
+                   <input type="text" name="college"/>
+             <label>Address:</label>
+                   <textarea name="address"></textarea>
+             <input type="Submit" value="Submit"/>
+                  </fieldset>
+           </form>
+         </body>
+</html>
